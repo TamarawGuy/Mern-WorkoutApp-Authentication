@@ -1,5 +1,5 @@
 import express from "express";
-import WorkoutModel from "../models/workoutModel";
+import { WorkoutModel } from "../models/workoutModel.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {

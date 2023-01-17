@@ -18,6 +18,6 @@ const WorkoutSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-WorkoutModel = mongoose.model("Workout", WorkoutSchema);
+const WorkoutModel = mongoose.model("Workout", WorkoutSchema);
 
-export default WorkoutModel;
+export { WorkoutModel };
