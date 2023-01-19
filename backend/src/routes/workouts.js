@@ -7,16 +7,16 @@ import {
   deleteWorkout,
 } from "../controllers/workoutController.js";
 
-const router = express.Router();
+const workoutRouter = express.Router();
 
-router.get("/", getWorkouts);
+workoutRouter.get("/", getWorkouts);
 
-router.get("/:id", getSingleWorkout);
+workoutRouter.get("/:id", getSingleWorkout);
 
-router.post("/", createWorkout);
+workoutRouter.post("/", createWorkout);
 
-router.patch("/:id", updateWorkout);
+workoutRouter.patch("/:id", updateWorkout);
 
-router.delete("/:id", deleteWorkout);
+workoutRouter.delete("/:id", deleteWorkout);
 
-export default router;
+export default workoutRouter;
