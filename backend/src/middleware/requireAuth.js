@@ -1,4 +1,3 @@
-import { response } from "express";
 import jwt from "jsonwebtoken";
 import { UserModel } from "../models/userModel.js";
 
